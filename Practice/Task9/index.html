@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container w-50  " style=" background-color: rgb(138, 100, 100,0.7);font-size:2rem;">
+    <div class="row text-center" style='font-size:3rem'>
+      <div class="col" data-previous-operand class="previous">number</div>
+      <div class="col"data-current-operand class="current">0</div>
+    </div>   
+    <div class="row text-center">  
+      <div class="col-6 bg-warning"data-all-clear>AC</div>
+        <div class="col-3 bg-warning"data-delete>DEL</div>
+          <div class="col-3 bg-danger"data-operation>/</div>
+  </div>
+  <div class="row text-center">  
+    <div class="col"data-number>1</div>
+      <div class="col" data-number>2</div>
+          <div class="col" data-number>3</div>
+            <div class="col bg-danger" data-operation>*</div>
+  </div>
+    <div class="row text-center">  
+      <div class="col" data-number>4</div>
+        <div class="col" data-number>5</div>
+          <div class="col" data-number>6</div>
+            <div class="col bg-danger" data-operation>+</div>
+  </div>
+    <div class="row text-center">  
+      <div class="col" data-number>7</div>
+        <div class="col" data-number>8</div>
+          <div class="col" data-number>9</div>
+            <div class="col bg-danger" data-operation>-</div>
+  </div>
+    <div class="row text-center">  
+      <div class="col-3" data-number>.</div>
+        <div class="col-3" data-number>0</div>
+          <div class="col-6 bg-danger" data-equals >=</div>
+    </div>
+    
+  </div>
+</body>
+</html>

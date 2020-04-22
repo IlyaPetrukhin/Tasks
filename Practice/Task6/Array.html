@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            let arr = [];
+            function getMinMax(max,min){
+                    if (max > min){
+                        for(var i = min ; i< max ;i++){
+                            arr.push(i)
+                        }
+                    } else if (min > max) {
+                        for(var j = max ; j<min;j++){
+                            arr.push(j)
+                       }
+                    } else { console.log('Numbers are equal')}
+                    console.log(arr)
+                    console.log(arr.length)
+                    
+                    return arr 
+            }
+            console.log(getMinMax(1 , 8))
+            let clone = arr.slice()
+            console.log(clone)
+
+            function sort(clone){
+               let double = []
+                for(let j=0; j < clone.length; j++){
+                    if (clone[j] % 3 == 1){
+                        double.push(clone[j])
+                    }
+                }
+                return double
+            }
+
+            console.log(sort(clone))
+         </script>
+    </body>
+</html>

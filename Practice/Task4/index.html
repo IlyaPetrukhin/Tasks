@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            let str = 'НННКПРРРРОРПППР ..... sum=k'
+            str = str.replace(/Н/g,"Н=1 ")
+            str = str.replace(/К/g,"К=5 ")
+            str = str.replace(/П/g,"П=2 ")
+            str = str.replace(/Р/g,"Р=4 ")
+            str = str.replace(/О/g,"О=7 ")
+            console.log(str)
+            str = str.match(/\d/g).join('')
+            console.log(str)
+  
+         function getNumbersSum(str){
+             return str.toString().split('').reduce(function(a, b) {
+                return +a + +b;
+            })
+        }
+        console.log(getNumbersSum(str))
+
+
+
+        </script>
+    </body>
+</html>

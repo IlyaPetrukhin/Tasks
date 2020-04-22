@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+ 
+            function multBy(obj) {
+              
+              for (let key in obj) {
+              if (typeof obj[key] == 'number') {
+                 obj[key] *= 2;
+               } 
+             }
+             return obj
+            }
+ 
+            
+            function sumProp(obj){
+            
+            let result = 0;
+            for(let key in obj){
+              if (typeof obj[key] == 'number') {
+                result += obj[key];
+              }
+            }
+            return result
+          }
+
+
+         </script>
+    </body>
+</html>
