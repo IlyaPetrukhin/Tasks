@@ -18,7 +18,8 @@ function initMap() {
    }
    info.addEventListener('click',fetch('https://api.weatherbit.io/v2.0/forecast/daily?&key=16632115da314485b772f3d91c04d1aa&'+autocomplete.value+'')
     .then(response=>response.json())
-    .then(init=>console.log(init)
+    .then(function(init){
+      return console.log(init)}
     ))
    
    //let path = fetch('https://api.weatherbit.io/v2.0/forecast/daily?&key=16632115da314485b772f3d91c04d1aa')
