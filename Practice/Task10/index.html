@@ -2,10 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-      <link href="style.css" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+      <link href="style.css" rel="stylesheet">
 
       </head>
     <body>
@@ -13,11 +11,21 @@
      
           <input id="autocomplete" type="text" 
               placeholder="Enter a location"><br>
-              <input id="weater" type="text" 
+              <input id="weather" type="text" 
               placeholder="City or town"><br>
       
-      <button id="infowindow-content">xxx</button>
-
+      <button id="infowindow-content">Показать погоду</button>
+      
+        <table class="table table-striped table-bordered" >
+          <thead id="app">
+            <tr>
+              <th>Date</th>
+              <th>Temperature</th>
+              <th>Weather conditions</th>
+            </tr>
+          </thead>  
+        </table>
+      
 
         <script src="script.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmPoTVtQSdPG8JGWPp8nR3wa9Fqd_oJvU&libraries=places&callback=initMap"
