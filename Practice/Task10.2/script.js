@@ -1,5 +1,5 @@
 function initMap() {
-  let autocomplete = document.getElementById('autocomplete')
+  let autocomplete = $('#autocomplete')
   autocomplete = new google.maps.places.Autocomplete(autocomplete)
   autocomplete.addListener('place_changed', function() {
     var place = autocomplete.getPlace();
